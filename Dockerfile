@@ -12,6 +12,8 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   cmake \
   cpio \
   cppcheck \
+  cscope \
+  ctags \
   curl \
   debianutils \
   diffstat \
@@ -27,11 +29,14 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   gzip \
   iputils-ping \
   libacl1 \
+  libbpf-dev \
   liblz4-tool \
+  linux-tools-common \
   llvm \
   locales \
   make \
   ninja-build \
+  pahole \
   patch \
   perl \
   python3 \
@@ -46,6 +51,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   socat \
   tar \
   texinfo \
+  tmux \
   tree \
   unzip \
   valgrind \
