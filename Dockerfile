@@ -1,8 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM ubuntu:24.04
 
-RUN apt-get -y update && apt-get dist-upgrade -y --no-install-recommends \
-  && apt-get install -y --no-install-recommends \
+RUN apt-get -y update && apt-get install -y --no-install-recommends \
   bash \
   bc \
   binutils \
@@ -12,6 +11,7 @@ RUN apt-get -y update && apt-get dist-upgrade -y --no-install-recommends \
   clang \
   cmake \
   cpio \
+  cppcheck \
   curl \
   debianutils \
   diffstat \
@@ -57,5 +57,7 @@ RUN apt-get -y update && apt-get dist-upgrade -y --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen en_US.UTF-8
+
+WORKDIR /home/ubuntu
 
 USER ubuntu
