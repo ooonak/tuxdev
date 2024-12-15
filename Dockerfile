@@ -37,6 +37,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   git-lfs \
   graphviz \
   gzip \
+  iproute2 \
   iputils-ping \
   lcov \
   libacl1 \
