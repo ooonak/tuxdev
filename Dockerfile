@@ -29,6 +29,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   g++ \
   gawk \
   gcc \
+  gcc-multilib \
   gdb-multiarch \
   gcovr \
   git \
