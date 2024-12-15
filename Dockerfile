@@ -43,6 +43,8 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   libbfd-dev \
   libbpf-dev \
   libelf-dev \
+  libncurses6 \
+  libncurses-dev \
   libpcap-dev \
   liblz4-tool \
   linux-tools-common \
