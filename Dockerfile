@@ -27,6 +27,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
   findutils \
   flex \
   g++ \
+  g++-multilib \
   gawk \
   gcc \
   gcc-multilib \
