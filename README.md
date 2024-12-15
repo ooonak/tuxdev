@@ -3,7 +3,7 @@
 ## Run
 
 ```
-$ podman run -it --rm --userns=keep-id --device=/dev/kvm -v $HOME/tuxdev:/home/ubuntu:Z tuxdev:2024.12.13 /bin/bash
+$ podman run -it --rm --userns=keep-id --device=/dev/kvm -v $HOME/tuxdev:/home/ubuntu/tuxdev:Z tuxdev:2024.12.15 /bin/bash
 ```
 
 To be able to run qemu-kvm from inside the container both the user on the host and inside the container needs to be a member of the kvm group.
